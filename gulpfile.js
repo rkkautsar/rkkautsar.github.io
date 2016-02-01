@@ -1,16 +1,17 @@
-var gulp    = require('gulp'),
-	sass    = require('gulp-sass'),
-	nano    = require('gulp-cssnano'),
-	twig    = require('gulp-twig'),
-	bower   = require('gulp-bower'),
-	prefix  = require('gulp-autoprefixer'),
-	jshint  = require('gulp-jshint'),
-	uglify  = require('gulp-uglify'),
-	concat  = require('gulp-concat'),
-	notify  = require('gulp-notify'),
-	rename  = require('gulp-rename'),
-	connect = require('gulp-connect'),
-	del     = require('del');
+var gulp     = require('gulp'),
+	sass     = require('gulp-sass'),
+	nano     = require('gulp-cssnano'),
+	twig     = require('gulp-twig'),
+	bower    = require('gulp-bower'),
+	prefix   = require('gulp-autoprefixer'),
+	jshint   = require('gulp-jshint'),
+	uglify   = require('gulp-uglify'),
+	concat   = require('gulp-concat'),
+	notify   = require('gulp-notify'),
+	rename   = require('gulp-rename'),
+	connect  = require('gulp-connect'),
+	beautify = require('gulp-html-beautify'),
+	del      = require('del');
 
 gulp.task('styles', function(){
 	gulp.src('./src/sass/**/*.scss')
@@ -48,6 +49,7 @@ gulp.task('render', function(){
 				notify({ message : e });
 			}
 		}))
+		.pipe(beautify())
 		.pipe(gulp.dest('./dist'))
 		.pipe(notify({ message : 'Templates render completed' }))
 		.pipe(connect.reload())
