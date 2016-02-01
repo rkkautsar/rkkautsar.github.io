@@ -1,0 +1,30 @@
+{
+  "name": "rkkautsar.github.io",
+  "description": "Personal website",
+  "main": "index.js",
+  "authors": [
+    "Rakha Kanz Kautsar"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "personal",
+    "website",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "homepage": "https://github.com/rkkautsar/rkkautsar.github.io",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/vendor",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "flexiblegs-scss": "~5.5.1"
+  }
+}
