@@ -1,1 +1,11 @@
+
+// Grid System
+
+$fg-breakpoints: (
+  (xs),
+  (sm, 48em),
+  (md, 62em),
+  (lg, 75em)
+);
+
 @import '../vendor/scss-flex-grid/flex-grid';
