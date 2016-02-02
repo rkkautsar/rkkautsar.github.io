@@ -25,6 +25,7 @@
     "tests"
   ],
   "devDependencies": {
-    "scss-flex-grid": "matthewsimo/scss-flex-grid"
+    "scss-flex-grid": "matthewsimo/scss-flex-grid",
+    "normalize-css": "normalize.css#^3.0.3"
   }
 }

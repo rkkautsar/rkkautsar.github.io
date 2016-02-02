@@ -15,9 +15,7 @@ var gulp     = require('gulp'),
 
 gulp.task('styles', function(){
 	gulp.src('./src/sass/**/*.scss')
-		.pipe(sass().on('error', function(e){
-			notify({ message : e });
-		}))
+		.pipe(sass().on('error', sass.logError))
 		.pipe(prefix({browsers:'> 5%'}))
 		.pipe(gulp.dest('./dist/css/'))
 		.pipe(rename({ suffix: '.min' }))
@@ -45,9 +43,7 @@ gulp.task('scripts', function(){
 gulp.task('render', function(){
 	gulp.src(['./src/views/**/*.twig', '!./src/views/includes/**/*.twig'])
 		.pipe(twig({
-			onError : function(e){
-				notify({ message : e });
-			}
+			errorLogToConsole: true
 		}))
 		.pipe(beautify())
 		.pipe(gulp.dest('./dist'))
@@ -74,6 +70,8 @@ gulp.task('watch', function(){
 	gulp.watch('./src/views/**/*.twig', ['render']);
 });
 
-gulp.task('build', ['clean', 'styles', 'scripts', 'render']);
+gulp.task('build', ['styles', 'scripts', 'render']);
+
+gulp.task('rebuild', ['clean', 'build']);
 
 gulp.task('default', ['build', 'serve', 'watch']);
