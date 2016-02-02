@@ -161,7 +161,7 @@
 .off-xs-11 {
   margin-left: 91.66667%; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 48em) {
   .col-sm-1 {
     flex-basis: 8.33333%;
     max-width: 8.33333%; }
@@ -221,7 +221,7 @@
   .off-sm-11 {
     margin-left: 91.66667%; } }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 62em) {
   .col-md-1 {
     flex-basis: 8.33333%;
     max-width: 8.33333%; }
@@ -281,7 +281,7 @@
   .off-md-11 {
     margin-left: 91.66667%; } }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 75em) {
   .col-lg-1 {
     flex-basis: 8.33333%;
     max-width: 8.33333%; }
