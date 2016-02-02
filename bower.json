@@ -25,6 +25,6 @@
     "tests"
   ],
   "devDependencies": {
-    "flexiblegs-scss": "~5.5.1"
+    "scss-flex-grid": "matthewsimo/scss-flex-grid"
   }
 }

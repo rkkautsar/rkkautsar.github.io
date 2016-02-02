@@ -15,10 +15,10 @@ var gulp     = require('gulp'),
 
 gulp.task('styles', function(){
 	gulp.src('./src/sass/**/*.scss')
-		.pipe(prefix('last 2 version'))
 		.pipe(sass().on('error', function(e){
 			notify({ message : e });
 		}))
+		.pipe(prefix({browsers:'> 5%'}))
 		.pipe(gulp.dest('./dist/css/'))
 		.pipe(rename({ suffix: '.min' }))
 		.pipe(nano({ discardComments: {removeAll: true} }))
