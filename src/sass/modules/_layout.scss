@@ -1,0 +1,27 @@
+main > section {
+	@extend .row;
+	@include centerer-parent;
+
+	min-height: 100vh;
+	padding: 1em;
+	background: darken(#fff, 5%);
+
+	@include gt(md) {
+		padding: 3em;
+	}
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0
+}
+
+#top #wrapper {
+	@extend .col-xs-12, .col-md-6;
+	@include centerer($horizontal: false);
+}
+
+#design {
+	h2 {
+		margin: 0 auto;
+	}
+}

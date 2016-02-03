@@ -1,0 +1,33 @@
+@mixin centerer-parent() {
+	position: relative;
+}
+
+@mixin centerer($horizontal: true, $vertical: true) {
+	position: absolute;
+	@if ($horizontal and $vertical) {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	} @else if ($horizontal) {
+		left: 50%;
+		transform: translate(-50%, 0);
+	} @else if ($vertical) {
+		top: 50%;
+		transform: translate(0, -50%);
+	}
+}
+
+@mixin gt($point) {
+	@if $point == sm {
+		@media (min-width: 48em) { @content ; }
+	}
+	@else if $point == md {
+		@media (min-width: 62em)  { @content ; }
+	}
+	@else if $point == lg {
+		@media (min-width: 75em)  { @content ; }
+	}
+	@else {
+		@media (min-width: $point) { @content ; }
+	}
+}

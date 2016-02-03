@@ -1,0 +1,25 @@
+// Color
+
+$white : #fff;
+$black : #333;
+$yellow: #ff0; 
+
+body {
+	color: $white;
+}
+
+span.yellow {
+	color: $yellow;
+}
+
+// Background Images
+
+#top {
+	background-image: url('../img/top-background.jpg');
+	background-position: right;
+	background-size: cover;
+}
+
+#design {
+	color: $black;
+}

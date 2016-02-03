@@ -1,6 +1,10 @@
-// Global border-box
-* {
-	box-sizing: border-box;
+// Global universal border-box
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 // Normalize
@@ -16,4 +20,14 @@ $fg-breakpoints: (
   (lg, 75em)
 );
 
+$fg-gutter : 0;
+
 @import '../vendor/scss-flex-grid/flex-grid';
+
+
+// Modules
+
+@import 'modules/mixin';;
+@import 'modules/fonts';
+@import 'modules/layout';
+@import 'modules/visual';

@@ -1,0 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,700);
+
+body {
+	font-family: "Roboto", sans;
+	font-weight: 300;
+	font-size: 1.5em;
+	@include gt(md){
+		font-size: 2em;
+	}
+}
+
+.sub {
+	font-weight: 300;
+}
