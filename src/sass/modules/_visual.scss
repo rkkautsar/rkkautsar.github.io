@@ -23,3 +23,10 @@ span.yellow {
 #design {
 	color: $black;
 }
+
+.button {
+	text-decoration: none;
+	border: $black 1px solid;
+	border-radius: 2em;
+	padding: .5em 1em;
+}
