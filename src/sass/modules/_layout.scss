@@ -4,7 +4,7 @@ main > section {
 	background: darken(#fff, 5%);
 
 	@include gt(md) {
-		padding: 3em;
+		padding: 2em;
 	}
 }
 
@@ -29,9 +29,14 @@ h1,h2,h3,h4,h5,h6 {
 	justify-content: space-between;
 	text-align: center;
 	
-	.wrapper {
-		margin: 0 auto;
+	img {
+		width: 100%;
+		max-width: 50em;
+		margin: .5em auto;
 
+		@include gt(lg) {
+			max-width: 72em;
+		}
 	}
 
 	.button {

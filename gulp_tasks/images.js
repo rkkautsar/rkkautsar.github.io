@@ -20,6 +20,10 @@ module.exports = function(gulp, config, plugins) {
 					quality: 85
 				}
 			}))
+			.pipe(gulp.dest('./dist/img'));
+
+		gulp.src(['./src/assets/**/*.svg'])
+			.pipe(plugins.svgmin())
 			.pipe(gulp.dest('./dist/img'))
 			.pipe(plugins.notify({ message : 'Image tasks completed' }));
 
