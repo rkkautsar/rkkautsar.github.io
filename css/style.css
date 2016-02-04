@@ -724,7 +724,7 @@ main > section {
   background: #f2f2f2; }
   @media (min-width: 62em) {
     main > section {
-      padding: 3em; } }
+      padding: 2em; } }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
@@ -748,8 +748,13 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: justify;
           justify-content: space-between;
   text-align: center; }
-  #design .wrapper {
-    margin: 0 auto; }
+  #design img {
+    width: 100%;
+    max-width: 50em;
+    margin: .5em auto; }
+    @media (min-width: 75em) {
+      #design img {
+        max-width: 72em; } }
   #design .button {
     display: inline-block; }
 
