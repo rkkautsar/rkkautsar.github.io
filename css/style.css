@@ -725,6 +725,17 @@ main > section {
     main > section {
       padding: 2em; } }
 
+footer {
+  margin-top: .5em;
+  padding: 2em 1em;
+  text-align: center; }
+  @media (min-width: 62em) {
+    footer {
+      padding: 3em 2em; } }
+  footer svg {
+    width: 2em;
+    height: 2em; }
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
@@ -749,7 +760,9 @@ section:not(#top) {
   text-align: center; }
 
 .button {
-  display: inline-block; }
+  display: inline-block;
+  border-radius: 2em;
+  padding: .5em 1em; }
 
 img {
   max-width: 100%;
@@ -781,8 +794,16 @@ span.yellow {
   #code .button {
     border-color: #fff; }
 
+#photo {
+  background-image: url("../img/photo-background-dark.jpg");
+  background-position: center;
+  background-size: cover; }
+  #photo .button {
+    border-color: #fff; }
+
+footer {
+  color: #333; }
+
 .button {
   text-decoration: none;
-  border: #333 1px solid;
-  border-radius: 2em;
-  padding: .5em 1em; }
+  border: #333 1px solid; }
