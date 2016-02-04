@@ -12,7 +12,7 @@ span.yellow {
 	color: $yellow;
 }
 
-// Background Images
+// Backgrounds
 
 #top {
 	background-image: url('../img/top-background-dark.jpg');
@@ -37,9 +37,24 @@ span.yellow {
 	}
 }
 
+#photo {
+	background-image: url('../img/photo-background-dark.jpg');
+	background-position: center;
+	background-size: cover;
+	
+	.button {
+		border-color: $white;
+	}
+}
+
+footer {
+	color: $black;
+}
+
+
+// Various aesthetics
+
 .button {
 	text-decoration: none;
 	border: $black 1px solid;
-	border-radius: 2em;
-	padding: .5em 1em;
 }
