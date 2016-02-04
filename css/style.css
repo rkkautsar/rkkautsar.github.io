@@ -747,13 +747,15 @@ section:not(#top) {
   -webkit-box-pack: justify;
           justify-content: space-between;
   text-align: center; }
-  section:not(#top) img {
-    max-width: 100%;
-    height: auto;
-    max-height: 55vh;
-    margin: .5em auto; }
-  section:not(#top) .button {
-    display: inline-block; }
+
+.button {
+  display: inline-block; }
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin: .5em auto; }
 
 body {
   color: #fff; }
