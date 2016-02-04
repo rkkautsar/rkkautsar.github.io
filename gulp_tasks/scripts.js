@@ -9,7 +9,7 @@ module.exports = function(gulp, config, plugins){
 				suffix : '.min' 
 			}))
 			.pipe(plugins.uglify())
-			.pipe(gulp.dest('js'))
+			.pipe(gulp.dest('./dist/js'))
 			.pipe(plugins.notify({ message : 'Scripts build completed' }))
 			.pipe(plugins.connect.reload())
 	}

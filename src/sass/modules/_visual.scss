@@ -15,13 +15,26 @@ span.yellow {
 // Background Images
 
 #top {
-	background-image: url('../img/top-background.jpg');
+	background-image: url('../img/top-background-dark.jpg');
 	background-position: right;
 	background-size: cover;
 }
 
 #design {
 	color: $black;
+	background-image: url('../img/design-background-light.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+#code {
+	background-image: url('../img/code-background-dark.png');
+	background-position: center;
+	background-size: cover;
+	
+	.button {
+		border-color: $white;
+	}
 }
 
 .button {

@@ -720,8 +720,7 @@ a {
 
 main > section {
   min-height: 100vh;
-  padding: 1em;
-  background: #f2f2f2; }
+  padding: 1em; }
   @media (min-width: 62em) {
     main > section {
       padding: 2em; } }
@@ -737,7 +736,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transform: translate(0, -50%);
             transform: translate(0, -50%); }
 
-#design {
+section:not(#top) {
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -748,14 +747,12 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: justify;
           justify-content: space-between;
   text-align: center; }
-  #design img {
-    width: 100%;
-    max-width: 50em;
+  section:not(#top) img {
+    max-width: 100%;
+    height: auto;
+    max-height: 55vh;
     margin: .5em auto; }
-    @media (min-width: 75em) {
-      #design img {
-        max-width: 72em; } }
-  #design .button {
+  section:not(#top) .button {
     display: inline-block; }
 
 body {
@@ -765,12 +762,22 @@ span.yellow {
   color: #ff0; }
 
 #top {
-  background-image: url("../img/top-background.jpg");
+  background-image: url("../img/top-background-dark.jpg");
   background-position: right;
   background-size: cover; }
 
 #design {
-  color: #333; }
+  color: #333;
+  background-image: url("../img/design-background-light.jpg");
+  background-position: center;
+  background-size: cover; }
+
+#code {
+  background-image: url("../img/code-background-dark.png");
+  background-position: center;
+  background-size: cover; }
+  #code .button {
+    border-color: #fff; }
 
 .button {
   text-decoration: none;

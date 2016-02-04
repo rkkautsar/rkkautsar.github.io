@@ -9,8 +9,10 @@ taskLoader({
 
 gulp.task('watch', function(){
 	gulp.watch('./src/sass/**/*.scss', ['styles']);
+	gulp.watch('./src/vendor/**/*.{scss,sass,css}');
 	gulp.watch('./src/js/**/*.js', ['scripts']);
 	gulp.watch('./src/views/**/*.twig', ['render']);
+	gulp.watch('./src/assets/**/*.{png,jpg,jpeg,svg}', ['images'])
 });
 
 gulp.task('build', ['styles', 'scripts', 'images', 'render']);
