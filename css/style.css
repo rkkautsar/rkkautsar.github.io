@@ -726,12 +726,8 @@ main > section {
       padding: 2em; } }
 
 footer {
-  margin-top: .5em;
   padding: 2em 1em;
   text-align: center; }
-  @media (min-width: 62em) {
-    footer {
-      padding: 3em 2em; } }
   footer svg {
     width: 2em;
     height: 2em; }
@@ -770,6 +766,11 @@ img {
   height: auto;
   margin: .5em auto; }
 
+section main ul {
+  list-style-type: none; }
+  section main ul li {
+    display: inline-block; }
+
 body {
   color: #fff; }
 
@@ -782,8 +783,7 @@ span.yellow {
   background-size: cover; }
 
 #design {
-  color: #333;
-  background-image: url("../img/design-background-light.jpg");
+  background-image: url("../img/design-background-dark.jpg");
   background-position: center;
   background-size: cover; }
 
@@ -791,19 +791,29 @@ span.yellow {
   background-image: url("../img/code-background-dark.png");
   background-position: center;
   background-size: cover; }
-  #code .button {
-    border-color: #fff; }
 
 #photo {
   background-image: url("../img/photo-background-dark.jpg");
   background-position: center;
   background-size: cover; }
-  #photo .button {
-    border-color: #fff; }
+
+#personality {
+  background-image: url("../img/personality-background-dark.jpg");
+  background-position: center;
+  background-size: cover; }
+
+#more {
+  background: #333; }
 
 footer {
-  color: #333; }
+  background: #FF4040;
+  border-top: #d90000 0.25em solid; }
+  footer main a {
+    border: 0; }
+
+a:not(.button) {
+  font-weight: bold; }
 
 .button {
   text-decoration: none;
-  border: #333 1px solid; }
+  border: #fff 1px solid; }
