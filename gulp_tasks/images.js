@@ -7,7 +7,6 @@ module.exports = function(gulp, config, plugins) {
 					resize: {width: 1280},
 					brightness: -0.5,
 					quality: 70,
-					blur: 5
 				}
 			}))
 			.pipe(gulp.dest('./dist/img'));
@@ -19,7 +18,6 @@ module.exports = function(gulp, config, plugins) {
 					resize: {width: 1280},
 					brightness: 0.5,
 					quality: 70,
-					blur: 5
 				}
 			}))
 			.pipe(gulp.dest('./dist/img'));

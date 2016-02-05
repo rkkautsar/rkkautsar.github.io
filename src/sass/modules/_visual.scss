@@ -3,6 +3,7 @@
 $white : #fff;
 $black : #333;
 $yellow: #ff0; 
+$red   : #FF4040;
 
 body {
 	color: $white;
@@ -21,8 +22,7 @@ span.yellow {
 }
 
 #design {
-	color: $black;
-	background-image: url('../img/design-background-light.jpg');
+	background-image: url('../img/design-background-dark.jpg');
 	background-position: center;
 	background-size: cover;
 }
@@ -31,24 +31,34 @@ span.yellow {
 	background-image: url('../img/code-background-dark.png');
 	background-position: center;
 	background-size: cover;
-	
-	.button {
-		border-color: $white;
-	}
 }
 
 #photo {
 	background-image: url('../img/photo-background-dark.jpg');
 	background-position: center;
 	background-size: cover;
-	
-	.button {
-		border-color: $white;
-	}
+}
+
+#personality {
+	background-image: url('../img/personality-background-dark.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+#more {
+	background: $black;
 }
 
 footer {
-	color: $black;
+	background: $red;
+	border-top: darken($red, 20) .25em solid;
+	main a {
+		border: 0;
+	}
+}
+
+a:not(.button) {
+	font-weight: bold;
 }
 
 
@@ -56,5 +66,5 @@ footer {
 
 .button {
 	text-decoration: none;
-	border: $black 1px solid;
+	border: $white 1px solid;
 }

@@ -8,13 +8,8 @@ main > section {
 }
 
 footer {
-	margin-top: .5em;
 	padding: 2em 1em;	
 	text-align: center;
-
-	@include gt(md) {
-		padding: 3em 2em;
-	}
 
 	svg {
 		width: 2em;
@@ -46,6 +41,9 @@ section:not(#top) {
 	text-align: center;	
 }
 
+#personality iframe {
+}
+
 .button {
 	display: inline-block;
 	border-radius: 2em;
@@ -58,4 +56,12 @@ img {
 	width: 100%;
 	height: auto;
 	margin: .5em auto;
+}
+
+section main ul {
+	list-style-type: none;
+	
+	li {
+		display: inline-block;
+	}
 }
